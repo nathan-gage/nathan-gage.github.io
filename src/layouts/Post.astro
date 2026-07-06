@@ -7,7 +7,7 @@ import StaticEffect from "../components/StaticEffect.astro";
 
 type Props = CollectionEntry<"post">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate } = Astro.props;
 ---
 
 <script>
@@ -47,8 +47,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       </div>
     </main>
     <style is:global>
+      @reference "../styles/global.css";
+
       img {
-        @apply mx-auto hover:rounded-3xl transition-all duration-700;
+        @apply mx-auto transition-all duration-700;
+      }
+
+      img:hover {
+        @apply rounded-3xl;
       }
 
       main {
@@ -84,9 +90,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       }
 
       pre {
-        @apply p-4 focus:ring-green-800
-               ring-2 ring-transparent rounded-sm
+        @apply p-4 ring-2 ring-transparent rounded-sm
                transition-all duration-200;
+      }
+
+      pre:focus {
+        @apply ring-green-800;
       }
 
       pre > code {

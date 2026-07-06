@@ -9,6 +9,7 @@ The "For You" paradigm extracts latent spaces of digital psyche.
 It stands as the Fourier transform of anthropic noise.
 
 ## The Wanderer
+
 remains unaware to this landscape. Its feeds are dopamine gyres for consciousness to slosh in.
 The Wanderer gambles in self-curated mediaverse casinos and socio-political vectors, while competing cybernetic realities screech for The Wanderer's gaze.
 
