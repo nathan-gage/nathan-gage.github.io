@@ -1,8 +1,9 @@
 ---
-title: 'Overdosing on Melatonin'
-description: 'Melatonin is being overdosed. The proper dose is 0.3mg - 1.5mg'
-pubDate: 'Oct 12 16:42:18 2023 -0500'
+title: "Overdosing on Melatonin"
+description: "Melatonin is being overdosed. The proper dose is 0.3mg - 1.5mg"
+pubDate: "Oct 12 16:42:18 2023 -0500"
 ---
+
 Everyone is overdosing melatonin.
 The [ideal dose](https://gwern.net/melatonin#tempus-fugit) is 0.3 ~ 1.0mg; the most popular doses are 10mg+.
 \

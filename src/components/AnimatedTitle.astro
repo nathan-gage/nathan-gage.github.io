@@ -22,9 +22,9 @@
   ];
 
   // -- state
-  const textIndices = new Array(textPairs.length).fill(textPairs[0].length - 1);
-  const cooldowns = new Array(textPairs.length).fill(cooldownTime);
-  const morphs = new Array(textPairs.length).fill(0);
+  const textIndices = textPairs.map(() => textPairs[0].length - 1);
+  const cooldowns = textPairs.map(() => cooldownTime);
+  const morphs = textPairs.map(() => 0);
 
   // -- initialize
   eltPairs.forEach((pair, i) => {

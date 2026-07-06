@@ -1,31 +1,23 @@
----
-// StaticOverlay.astro
-let x = 0;
-let y = 0;
----
-
 <script>
-    const XValues = [-15, 0, 3, 7, 15];
-    const YValues = [-10, 0, 10];
+  const xValues = [-15, 0, 3, 7, 15];
+  const yValues = [-10, 0, 10];
+  const overlay = document.getElementById("static-overlay");
 
-    setInterval(() => {
-        // pick randomly
-        document.getElementById("static-overlay").style.transform =
-            "translate(" +
-            XValues[Math.floor(Math.random() * XValues.length)] +
-            "%, " +
-            YValues[Math.floor(Math.random() * YValues.length)] +
-            "%)";
-    }, 75);
+  setInterval(() => {
+    const x = xValues[Math.floor(Math.random() * xValues.length)];
+    const y = yValues[Math.floor(Math.random() * yValues.length)];
+
+    if (overlay) {
+      overlay.style.transform = `translate(${x}%, ${y}%)`;
+    }
+  }, 75);
 </script>
 
-<div
-    class="pointer-events-none fixed inset-0 z-40 h-full w-full overflow-hidden"
->
-    <div
-        id="static-overlay"
-        class="absolute inset-[-200%] h-[400%] w-[400%] bg-[url('/framernoise.png')] bg-[length:256px] bg-left-top opacity-[3%]"
-        style="transform: translateX(-10%) translateY(10%);"
-    >
-    </div>
+<div class="pointer-events-none fixed inset-0 z-40 h-full w-full overflow-hidden">
+  <div
+    id="static-overlay"
+    class="absolute inset-[-200%] h-[400%] w-[400%] bg-[url('/framernoise.png')] bg-[length:256px] bg-left-top opacity-[3%]"
+    style="transform: translateX(-10%) translateY(10%);"
+  >
+  </div>
 </div>
