@@ -31,6 +31,7 @@ npm run dev
 | `npm run format`       | Format files with `oxfmt`                      |
 | `npm run format:check` | Check formatting with `oxfmt`                  |
 | `npm run lint`         | Lint with `oxlint`                             |
+| `npm run lint:ci`      | Lint with GitHub Actions annotations           |
 | `npm run check`        | Run format check, lint, and build              |
 
 ## Project structure
