@@ -23,7 +23,7 @@
   "dependencies": {
     "@astrojs/mdx": "^7.0.2",
     "@astrojs/rss": "^4.0.19",
-    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/sitemap": "^3.7.4",
     "@fontsource-variable/arimo": "^5.2.8",
     "@fontsource-variable/lora": "^5.2.8",
     "@fontsource/geist-mono": "^5.2.8",
